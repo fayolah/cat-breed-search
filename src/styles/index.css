@@ -1,0 +1,209 @@
+/* Left this because I like the style */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.banner {
+  text-align: center;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.banner h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner h3 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.cat-image {
+  width: 75%;
+  height: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  object-fit: cover;
+}
+
+.fav-btn {
+  display: grid;
+  padding: 5px;
+}
+
+.breed-select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  margin-left: 45vw;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* SEARCH BAR STYLES */
+
+.searchbar {
+  width: 40%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 30vw;
+  margin-bottom: 16px;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin-top: -15px;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 130px;
+  overflow-y: auto;
+  background-color: white;
+  position: absolute;
+  width: 42%;
+  color: black;
+  margin-left: 30vw;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.no-img {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* LOAD MORE */
+
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+/* FAVORITES BAR STYLES */
+
+.favorites-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  align-items: center;
+}
+
+.favorites-header {
+  display: grid;
+  padding: 0;
+}
+
+.no-faves {
+  color: white;
+  display: grid;
+}
+
+.favorites-dropdown {
+  justify-items: center;
+  display: grid;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  overflow-x: auto;
+  height: 10vw;
+  width: 90vw;
+}
+
+.fave-image {
+  gap: 1rem;
+  height: 100px;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.fav-image img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.favorite-item button {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 5px;
+  margin-left: 2.5vw;
+}
+
+/* MODAL STYLES */
+
+.modal-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  overflow-y: scroll;
+  height: 40vw;
+}
+
+.favmenu-btn {
+  margin: 10px;
+}
+
+.modal-image {
+  max-width: 40vw;
+  max-height: 60vh;
+  border-radius: 8px;
+}
+.modal-overlay {
+  display: grid;
+  grid-template-columns: repeat();
+  text-align: center;
+  overflow-y: auto;
+}
+
+.breed-info {
+  padding-left: 30px;
+  padding-right: 30px;
+}
